@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ArtHeart</title>
+  <title>Art with a Heart</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<p>Art with a Heart</p>
 <%= yield %>
+<%= yield(:list) %>
+<%= yield(:tags) %>
 
 </body>
 </html>

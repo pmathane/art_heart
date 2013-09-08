@@ -1,9 +1,14 @@
 ArtHeart::Application.routes.draw do
-  get "main/home"
-  get "main/painting"
-  get "main/artist"
-  get "main/ngo"
-  get "main/aboutus"
+  get 'users/new'
+
+  root to: 'main#home'
+
+  get 'main/home' => 'main#home'
+  get 'main/painting' => 'main#painting'
+  get 'main/artist' => 'main#artist'
+  get 'main/ngo' => 'main#ngo'
+  get 'main/aboutus' => 'main#aboutus'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
